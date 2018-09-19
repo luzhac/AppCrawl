@@ -1,0 +1,20 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<form method="get" name="search" target="_self">
+<p style="text-align: center;">&nbsp;</p>
+
+<p style="text-align: center;"><input name="keyword" type="text"  {% if keyword %}
+  value="{{ keyword}}"  {% endif %}/><input name="Search" type="button" value="Search" />&nbsp;</p>
+</form>
+
+<p>&nbsp;</p>
+{% for res in ress %}
+   {{ res  }}
+
+
+{% endfor %}
+</body>
+</html>
